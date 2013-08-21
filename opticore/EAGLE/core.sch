@@ -2770,42 +2770,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </library>
 <library name="Spark">
 <packages>
-<package name="SPARK_LOGO2">
-<polygon width="0.0254" layer="29">
-<vertex x="2.2606" y="1.1684"/>
-<vertex x="1.6764" y="1.2954"/>
-<vertex x="1.6002" y="1.1684"/>
-<vertex x="1.6764" y="1.0414"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="0.0254" y="1.1684"/>
-<vertex x="0.6096" y="1.2954"/>
-<vertex x="0.7112" y="1.1684"/>
-<vertex x="0.6096" y="1.0414"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="0.381" y="1.9304"/>
-<vertex x="0.8636" y="1.1684"/>
-<vertex x="0.3556" y="0.3556"/>
-<vertex x="1.143" y="0.8636"/>
-<vertex x="1.9304" y="0.381"/>
-<vertex x="1.4224" y="1.1684"/>
-<vertex x="1.9304" y="1.9304"/>
-<vertex x="1.143" y="1.4478"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="1.143" y="2.286"/>
-<vertex x="1.016" y="1.6764"/>
-<vertex x="1.143" y="1.6002"/>
-<vertex x="1.27" y="1.6764"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="1.143" y="0.7112"/>
-<vertex x="1.016" y="0.635"/>
-<vertex x="1.143" y="0.0254"/>
-<vertex x="1.27" y="0.635"/>
-</polygon>
-</package>
 <package name="USB-MICROB-ALIGN">
 <wire x1="-3.4" y1="-2.15" x2="-3" y2="-2.15" width="0.127" layer="51"/>
 <wire x1="3" y1="-2.15" x2="3.4" y2="-2.15" width="0.127" layer="51"/>
@@ -3928,9 +3892,6 @@ Source: http://www.osram.convergy.de/</description>
 </package>
 </packages>
 <symbols>
-<symbol name="SPARK_LOGO">
-<text x="0" y="0" size="1.778" layer="94" font="vector">Spark</text>
-</symbol>
 <symbol name="USB">
 <wire x1="5.08" y1="8.89" x2="0" y2="8.89" width="0.254" layer="94"/>
 <wire x1="0" y1="8.89" x2="0" y2="-1.27" width="0.254" layer="94"/>
@@ -4166,18 +4127,6 @@ Source: http://www.osram.convergy.de/</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SPARK_LOGO2">
-<gates>
-<gate name="G$1" symbol="SPARK_LOGO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SPARK_LOGO2">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="USB" prefix="JP">
 <gates>
 <gate name="G$1" symbol="USB" x="0" y="0"/>
@@ -17720,7 +17669,6 @@ Source: http://www.onsemi.com/pub/Collateral/MC33269-D.PDF</description>
 <part name="U3" library="Spark" deviceset="SST25VF040B" device="-S2" value="SST25VF040B-S2"/>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="U$1" library="Spark" deviceset="SPARK_LOGO2" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="SparkFun" deviceset="3.3V" device="" value="+3V3"/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
@@ -17733,7 +17681,7 @@ Source: http://www.onsemi.com/pub/Collateral/MC33269-D.PDF</description>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MMDT3904" device=""/>
+<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MMDT3904" device=""/>
 <part name="R9" library="rcl" deviceset="R-US_" device="R0603" value="1K"/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="VDDA" library="supply2" deviceset="VCC" device=""/>
@@ -17773,7 +17721,7 @@ Source: http://www.onsemi.com/pub/Collateral/MC33269-D.PDF</description>
 <part name="LED1" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
 <part name="U$3" library="SparkFun-Sensors" deviceset="BMP085" device=""/>
 <part name="D2" library="diode" deviceset="1N4004" device=""/>
-<part name="Q2" library="transistor-npn" deviceset="2N3904" device=""/>
+<part name="Q3" library="transistor-npn" deviceset="2N3904" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -17786,7 +17734,7 @@ Source: http://www.onsemi.com/pub/Collateral/MC33269-D.PDF</description>
 <part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="1K"/>
 <part name="LED2" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
 <part name="D3" library="diode" deviceset="1N4004" device=""/>
-<part name="Q3" library="transistor-npn" deviceset="2N3904" device=""/>
+<part name="Q4" library="transistor-npn" deviceset="2N3904" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -17797,7 +17745,7 @@ Source: http://www.onsemi.com/pub/Collateral/MC33269-D.PDF</description>
 <part name="R16" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="1K"/>
 <part name="LED3" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
 <part name="D4" library="diode" deviceset="1N4004" device=""/>
-<part name="Q4" library="transistor-npn" deviceset="2N3904" device=""/>
+<part name="Q6" library="transistor-npn" deviceset="2N3904" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -17808,7 +17756,7 @@ Source: http://www.onsemi.com/pub/Collateral/MC33269-D.PDF</description>
 <part name="R19" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="1K"/>
 <part name="LED4" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
 <part name="D5" library="diode" deviceset="1N4004" device=""/>
-<part name="Q5" library="transistor-npn" deviceset="2N3904" device=""/>
+<part name="Q7" library="transistor-npn" deviceset="2N3904" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND31" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND33" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -17819,7 +17767,7 @@ Source: http://www.onsemi.com/pub/Collateral/MC33269-D.PDF</description>
 <part name="R22" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="1K"/>
 <part name="LED5" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
 <part name="D6" library="diode" deviceset="1N4004" device=""/>
-<part name="Q6" library="transistor-npn" deviceset="2N3904" device=""/>
+<part name="Q5" library="transistor-npn" deviceset="2N3904" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND34" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND35" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -17830,7 +17778,7 @@ Source: http://www.onsemi.com/pub/Collateral/MC33269-D.PDF</description>
 <part name="R25" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="1K"/>
 <part name="LED6" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
 <part name="D7" library="diode" deviceset="1N4004" device=""/>
-<part name="Q7" library="transistor-npn" deviceset="2N3904" device=""/>
+<part name="Q8" library="transistor-npn" deviceset="2N3904" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND36" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND37" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -17841,7 +17789,7 @@ Source: http://www.onsemi.com/pub/Collateral/MC33269-D.PDF</description>
 <part name="R28" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="1K"/>
 <part name="LED7" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
 <part name="D8" library="diode" deviceset="1N4004" device=""/>
-<part name="Q8" library="transistor-npn" deviceset="2N3904" device=""/>
+<part name="Q9" library="transistor-npn" deviceset="2N3904" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND38" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND39" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -18044,7 +17992,6 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 </instance>
 <instance part="+3V12" gate="G$1" x="416.56" y="81.28"/>
 <instance part="GND22" gate="1" x="444.5" y="50.8"/>
-<instance part="U$1" gate="G$1" x="106.68" y="10.16"/>
 <instance part="GND15" gate="1" x="396.24" y="96.52"/>
 <instance part="P+1" gate="G$1" x="233.68" y="78.74" rot="R180"/>
 <instance part="GND16" gate="1" x="83.82" y="55.88" rot="R90"/>
@@ -18075,10 +18022,10 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <attribute name="NAME" x="294.894" y="23.241" size="1.778" layer="95"/>
 <attribute name="VALUE" x="294.894" y="20.701" size="1.778" layer="96"/>
 </instance>
-<instance part="Q1" gate="G$1" x="52.07" y="64.77" smashed="yes" rot="R90">
+<instance part="Q2" gate="G$1" x="52.07" y="64.77" smashed="yes" rot="R90">
 <attribute name="NAME" x="48.26" y="68.58" size="1.778" layer="95"/>
 </instance>
-<instance part="Q1" gate="G$2" x="63.5" y="45.72" smashed="yes" rot="R90">
+<instance part="Q2" gate="G$2" x="63.5" y="45.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="62.23" y="44.45" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="R9" gate="G$1" x="427.99" y="66.04" rot="R180"/>
@@ -18155,7 +18102,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <instance part="LED1" gate="G$1" x="515.62" y="154.94"/>
 <instance part="U$3" gate="G$1" x="716.28" y="78.74"/>
 <instance part="D2" gate="1" x="525.78" y="152.4" rot="R90"/>
-<instance part="Q2" gate="G1" x="541.02" y="134.62"/>
+<instance part="Q3" gate="G1" x="541.02" y="134.62"/>
 <instance part="SUPPLY1" gate="G$1" x="520.7" y="175.26"/>
 <instance part="GND23" gate="1" x="535.94" y="121.92"/>
 <instance part="GND24" gate="1" x="543.56" y="121.92"/>
@@ -18168,7 +18115,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <instance part="R13" gate="G$1" x="574.04" y="162.56" rot="R90"/>
 <instance part="LED2" gate="G$1" x="574.04" y="154.94"/>
 <instance part="D3" gate="1" x="584.2" y="152.4" rot="R90"/>
-<instance part="Q3" gate="G1" x="599.44" y="134.62"/>
+<instance part="Q4" gate="G1" x="599.44" y="134.62"/>
 <instance part="SUPPLY2" gate="G$1" x="579.12" y="175.26"/>
 <instance part="GND26" gate="1" x="594.36" y="121.92"/>
 <instance part="GND27" gate="1" x="601.98" y="121.92"/>
@@ -18179,7 +18126,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <instance part="R16" gate="G$1" x="515.62" y="101.6" rot="R90"/>
 <instance part="LED3" gate="G$1" x="515.62" y="93.98"/>
 <instance part="D4" gate="1" x="525.78" y="91.44" rot="R90"/>
-<instance part="Q4" gate="G1" x="541.02" y="73.66"/>
+<instance part="Q6" gate="G1" x="541.02" y="73.66"/>
 <instance part="SUPPLY3" gate="G$1" x="520.7" y="114.3"/>
 <instance part="GND28" gate="1" x="535.94" y="60.96"/>
 <instance part="GND29" gate="1" x="543.56" y="60.96"/>
@@ -18190,7 +18137,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <instance part="R19" gate="G$1" x="574.04" y="101.6" rot="R90"/>
 <instance part="LED4" gate="G$1" x="574.04" y="93.98"/>
 <instance part="D5" gate="1" x="584.2" y="91.44" rot="R90"/>
-<instance part="Q5" gate="G1" x="599.44" y="73.66"/>
+<instance part="Q7" gate="G1" x="599.44" y="73.66"/>
 <instance part="SUPPLY4" gate="G$1" x="579.12" y="114.3"/>
 <instance part="GND31" gate="1" x="594.36" y="60.96"/>
 <instance part="GND33" gate="1" x="601.98" y="60.96"/>
@@ -18201,7 +18148,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <instance part="R22" gate="G$1" x="635" y="162.56" rot="R90"/>
 <instance part="LED5" gate="G$1" x="635" y="154.94"/>
 <instance part="D6" gate="1" x="645.16" y="152.4" rot="R90"/>
-<instance part="Q6" gate="G1" x="660.4" y="134.62"/>
+<instance part="Q5" gate="G1" x="660.4" y="134.62"/>
 <instance part="SUPPLY5" gate="G$1" x="640.08" y="175.26"/>
 <instance part="GND34" gate="1" x="655.32" y="121.92"/>
 <instance part="GND35" gate="1" x="662.94" y="121.92"/>
@@ -18212,7 +18159,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <instance part="R25" gate="G$1" x="632.46" y="101.6" rot="R90"/>
 <instance part="LED6" gate="G$1" x="632.46" y="93.98"/>
 <instance part="D7" gate="1" x="642.62" y="91.44" rot="R90"/>
-<instance part="Q7" gate="G1" x="657.86" y="73.66"/>
+<instance part="Q8" gate="G1" x="657.86" y="73.66"/>
 <instance part="SUPPLY6" gate="G$1" x="637.54" y="114.3"/>
 <instance part="GND36" gate="1" x="652.78" y="60.96"/>
 <instance part="GND37" gate="1" x="660.4" y="60.96"/>
@@ -18223,7 +18170,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <instance part="R28" gate="G$1" x="693.42" y="162.56" rot="R90"/>
 <instance part="LED7" gate="G$1" x="693.42" y="154.94"/>
 <instance part="D8" gate="1" x="703.58" y="152.4" rot="R90"/>
-<instance part="Q8" gate="G1" x="718.82" y="134.62"/>
+<instance part="Q9" gate="G1" x="718.82" y="134.62"/>
 <instance part="SUPPLY7" gate="G$1" x="698.5" y="175.26"/>
 <instance part="GND38" gate="1" x="713.74" y="121.92"/>
 <instance part="GND39" gate="1" x="721.36" y="121.92"/>
@@ -18449,7 +18396,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="55.88" x2="74.93" y2="55.88" width="0.1524" layer="91"/>
 <junction x="74.93" y="55.88"/>
-<pinref part="Q1" gate="G$2" pin="E"/>
+<pinref part="Q2" gate="G$2" pin="E"/>
 </segment>
 <segment>
 <pinref part="U2" gate="RESET" pin="BOOT0"/>
@@ -18539,7 +18486,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 </segment>
 <segment>
 <pinref part="GND24" gate="1" pin="GND"/>
-<pinref part="Q2" gate="G1" pin="E"/>
+<pinref part="Q3" gate="G1" pin="E"/>
 <wire x1="543.56" y1="124.46" x2="543.56" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -18548,7 +18495,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 </segment>
 <segment>
 <pinref part="GND27" gate="1" pin="GND"/>
-<pinref part="Q3" gate="G1" pin="E"/>
+<pinref part="Q4" gate="G1" pin="E"/>
 <wire x1="601.98" y1="124.46" x2="601.98" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -18557,7 +18504,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 </segment>
 <segment>
 <pinref part="GND29" gate="1" pin="GND"/>
-<pinref part="Q4" gate="G1" pin="E"/>
+<pinref part="Q6" gate="G1" pin="E"/>
 <wire x1="543.56" y1="63.5" x2="543.56" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -18566,7 +18513,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 </segment>
 <segment>
 <pinref part="GND33" gate="1" pin="GND"/>
-<pinref part="Q5" gate="G1" pin="E"/>
+<pinref part="Q7" gate="G1" pin="E"/>
 <wire x1="601.98" y1="63.5" x2="601.98" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -18575,7 +18522,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 </segment>
 <segment>
 <pinref part="GND35" gate="1" pin="GND"/>
-<pinref part="Q6" gate="G1" pin="E"/>
+<pinref part="Q5" gate="G1" pin="E"/>
 <wire x1="662.94" y1="124.46" x2="662.94" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -18584,7 +18531,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 </segment>
 <segment>
 <pinref part="GND37" gate="1" pin="GND"/>
-<pinref part="Q7" gate="G1" pin="E"/>
+<pinref part="Q8" gate="G1" pin="E"/>
 <wire x1="660.4" y1="63.5" x2="660.4" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -18593,7 +18540,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 </segment>
 <segment>
 <pinref part="GND39" gate="1" pin="GND"/>
-<pinref part="Q8" gate="G1" pin="E"/>
+<pinref part="Q9" gate="G1" pin="E"/>
 <wire x1="721.36" y1="124.46" x2="721.36" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -18800,7 +18747,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 <wire x1="46.99" y1="67.31" x2="38.1" y2="67.31" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="67.31" x2="38.1" y2="72.39" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="C"/>
+<pinref part="Q2" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
@@ -19207,15 +19154,15 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <junction x="52.07" y="55.88"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="52.07" y1="55.88" x2="45.72" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="B"/>
-<pinref part="Q1" gate="G$2" pin="C"/>
+<pinref part="Q2" gate="G$1" pin="B"/>
+<pinref part="Q2" gate="G$2" pin="C"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="62.23" y1="67.31" x2="57.15" y2="67.31" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="E"/>
+<pinref part="Q2" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -19260,7 +19207,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="Q1" gate="G$2" pin="B"/>
+<pinref part="Q2" gate="G$2" pin="B"/>
 <wire x1="63.5" y1="38.1" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="77.47" y1="38.1" x2="63.5" y2="38.1" width="0.1524" layer="91"/>
@@ -19417,7 +19364,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <wire x1="515.62" y1="149.86" x2="515.62" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="515.62" y1="147.32" x2="525.78" y2="147.32" width="0.1524" layer="91"/>
 <junction x="525.78" y="147.32"/>
-<pinref part="Q2" gate="G1" pin="C"/>
+<pinref part="Q3" gate="G1" pin="C"/>
 <wire x1="543.56" y1="139.7" x2="525.78" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="525.78" y1="139.7" x2="525.78" y2="147.32" width="0.1524" layer="91"/>
 </segment>
@@ -19574,7 +19521,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="Q2" gate="G1" pin="B"/>
+<pinref part="Q3" gate="G1" pin="B"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="538.48" y1="134.62" x2="535.94" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
@@ -19615,14 +19562,14 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <wire x1="574.04" y1="149.86" x2="574.04" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="574.04" y1="147.32" x2="584.2" y2="147.32" width="0.1524" layer="91"/>
 <junction x="584.2" y="147.32"/>
-<pinref part="Q3" gate="G1" pin="C"/>
+<pinref part="Q4" gate="G1" pin="C"/>
 <wire x1="601.98" y1="139.7" x2="584.2" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="584.2" y1="139.7" x2="584.2" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="Q3" gate="G1" pin="B"/>
+<pinref part="Q4" gate="G1" pin="B"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="596.9" y1="134.62" x2="594.36" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="1"/>
@@ -19646,14 +19593,14 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <wire x1="515.62" y1="88.9" x2="515.62" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="515.62" y1="86.36" x2="525.78" y2="86.36" width="0.1524" layer="91"/>
 <junction x="525.78" y="86.36"/>
-<pinref part="Q4" gate="G1" pin="C"/>
+<pinref part="Q6" gate="G1" pin="C"/>
 <wire x1="543.56" y1="78.74" x2="525.78" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="525.78" y1="78.74" x2="525.78" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="Q4" gate="G1" pin="B"/>
+<pinref part="Q6" gate="G1" pin="B"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="538.48" y1="73.66" x2="535.94" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="1"/>
@@ -19677,14 +19624,14 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <wire x1="574.04" y1="88.9" x2="574.04" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="574.04" y1="86.36" x2="584.2" y2="86.36" width="0.1524" layer="91"/>
 <junction x="584.2" y="86.36"/>
-<pinref part="Q5" gate="G1" pin="C"/>
+<pinref part="Q7" gate="G1" pin="C"/>
 <wire x1="601.98" y1="78.74" x2="584.2" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="584.2" y1="78.74" x2="584.2" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="Q5" gate="G1" pin="B"/>
+<pinref part="Q7" gate="G1" pin="B"/>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="596.9" y1="73.66" x2="594.36" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="1"/>
@@ -19708,14 +19655,14 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <wire x1="635" y1="149.86" x2="635" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="635" y1="147.32" x2="645.16" y2="147.32" width="0.1524" layer="91"/>
 <junction x="645.16" y="147.32"/>
-<pinref part="Q6" gate="G1" pin="C"/>
+<pinref part="Q5" gate="G1" pin="C"/>
 <wire x1="662.94" y1="139.7" x2="645.16" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="645.16" y1="139.7" x2="645.16" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="Q6" gate="G1" pin="B"/>
+<pinref part="Q5" gate="G1" pin="B"/>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="657.86" y1="134.62" x2="655.32" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="1"/>
@@ -19739,14 +19686,14 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <wire x1="632.46" y1="88.9" x2="632.46" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="632.46" y1="86.36" x2="642.62" y2="86.36" width="0.1524" layer="91"/>
 <junction x="642.62" y="86.36"/>
-<pinref part="Q7" gate="G1" pin="C"/>
+<pinref part="Q8" gate="G1" pin="C"/>
 <wire x1="660.4" y1="78.74" x2="642.62" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="642.62" y1="78.74" x2="642.62" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
-<pinref part="Q7" gate="G1" pin="B"/>
+<pinref part="Q8" gate="G1" pin="B"/>
 <pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="655.32" y1="73.66" x2="652.78" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="1"/>
@@ -19770,14 +19717,14 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <wire x1="693.42" y1="149.86" x2="693.42" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="693.42" y1="147.32" x2="703.58" y2="147.32" width="0.1524" layer="91"/>
 <junction x="703.58" y="147.32"/>
-<pinref part="Q8" gate="G1" pin="C"/>
+<pinref part="Q9" gate="G1" pin="C"/>
 <wire x1="721.36" y1="139.7" x2="703.58" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="703.58" y1="139.7" x2="703.58" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
-<pinref part="Q8" gate="G1" pin="B"/>
+<pinref part="Q9" gate="G1" pin="B"/>
 <pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="716.28" y1="134.62" x2="713.74" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="1"/>
