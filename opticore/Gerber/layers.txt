@@ -1,0 +1,10 @@
+Top Copper Layer: GTL
+Second Copper Layer: G2L
+Third Copper Layer: G15L
+Bottom Copper Layer: GBL
+Top Soldermask: GTS
+Bottom Soldermask: GBS
+Top Silkscreen: GTO
+Bottom Silkscreen: GBO
+Milling Layer: MIL
+Drill File: TXT
