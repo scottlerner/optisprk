@@ -2,8 +2,8 @@ EAGLE AutoRouter Statistics:
 
 Job           : D:/Users/Scott/Documents/GitHub/optisprk/opticore/EAGLE/core.brd
 
-Start at      : 12:54:22 (9/1/2013)
-End at        : 12:54:31 (9/1/2013)
+Start at      : 21:15:25 (9/3/2013)
+End at        : 21:15:34 (9/3/2013)
 Elapsed time  : 00:00:09
 
 Signals       :    57   RoutingGrid: 7 mil  Layers: 2
