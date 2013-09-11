@@ -7967,20 +7967,6 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <pinref part="JP11" gate="G$1" pin="7"/>
 </segment>
 </net>
-<net name="A6" class="0">
-<segment>
-<wire x1="99.06" y1="30.48" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
-<label x="88.9" y="30.48" size="1.778" layer="95"/>
-<pinref part="JP11" gate="G$1" pin="6"/>
-</segment>
-</net>
-<net name="A7" class="0">
-<segment>
-<wire x1="99.06" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
-<label x="88.9" y="33.02" size="1.778" layer="95"/>
-<pinref part="JP11" gate="G$1" pin="5"/>
-</segment>
-</net>
 <net name="D7" class="0">
 <segment>
 <wire x1="127" y1="33.02" x2="139.7" y2="33.02" width="0.1524" layer="91"/>
@@ -8533,9 +8519,9 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <pinref part="R22" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="99.06" y1="15.24" x2="88.9" y2="15.24" width="0.1524" layer="91"/>
-<label x="88.9" y="15.24" size="1.778" layer="95"/>
-<pinref part="JP11" gate="G$1" pin="12"/>
+<wire x1="99.06" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
+<label x="88.9" y="33.02" size="1.778" layer="95"/>
+<pinref part="JP11" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -8547,9 +8533,9 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <pinref part="R23" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="99.06" y1="17.78" x2="88.9" y2="17.78" width="0.1524" layer="91"/>
-<label x="88.9" y="17.78" size="1.778" layer="95"/>
-<pinref part="JP11" gate="G$1" pin="11"/>
+<wire x1="99.06" y1="30.48" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
+<label x="88.9" y="30.48" size="1.778" layer="95"/>
+<pinref part="JP11" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -8604,6 +8590,20 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
 <pinref part="LED7" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="A1" class="0">
+<segment>
+<wire x1="99.06" y1="17.78" x2="88.9" y2="17.78" width="0.1524" layer="91"/>
+<label x="88.9" y="17.78" size="1.778" layer="95"/>
+<pinref part="JP11" gate="G$1" pin="11"/>
+</segment>
+</net>
+<net name="A0" class="0">
+<segment>
+<wire x1="99.06" y1="15.24" x2="88.9" y2="15.24" width="0.1524" layer="91"/>
+<label x="88.9" y="15.24" size="1.778" layer="95"/>
+<pinref part="JP11" gate="G$1" pin="12"/>
 </segment>
 </net>
 </nets>
