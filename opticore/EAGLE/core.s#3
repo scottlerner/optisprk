@@ -7477,7 +7477,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </class>
 </classes>
 <parts>
-<part name="FRAME3" library="SparkFun" deviceset="FRAME-LETTER" device=""/>
+<part name="FRAME1" library="SparkFun" deviceset="FRAME-LETTER" device=""/>
 <part name="U$2" library="SparkFun-Electromechanical" deviceset="RELAY" device="PTH4"/>
 <part name="U$3" library="SparkFun-Sensors" deviceset="BMP085" device=""/>
 <part name="D1" library="diode" deviceset="1N4004" device=""/>
@@ -7603,8 +7603,8 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <text x="135.89" y="10.16" size="1.778" layer="97">User IO</text>
 </plain>
 <instances>
-<instance part="FRAME3" gate="G$1" x="0" y="0"/>
-<instance part="FRAME3" gate="G$2" x="147.32" y="0"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
 <instance part="U$2" gate="G$1" x="35.56" y="152.4"/>
 <instance part="U$3" gate="G$1" x="210.82" y="88.9"/>
 <instance part="D1" gate="1" x="20.32" y="152.4" rot="R90"/>
@@ -7681,7 +7681,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <instance part="X1" gate="-6" x="233.68" y="142.24" rot="MR0"/>
 <instance part="X1" gate="-7" x="233.68" y="137.16" rot="MR0"/>
 <instance part="X1" gate="-8" x="233.68" y="132.08" rot="MR0"/>
-<instance part="LOGO2" gate="G$1" x="187.96" y="48.26"/>
+<instance part="LOGO2" gate="G$1" x="185.42" y="48.26"/>
 <instance part="R1" gate="G$1" x="10.16" y="162.56" rot="R90"/>
 <instance part="R2" gate="G$1" x="25.4" y="134.62"/>
 <instance part="R3" gate="G$1" x="30.48" y="129.54" rot="R90"/>
@@ -7843,6 +7843,41 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <segment>
 <pinref part="GND36" gate="1" pin="GND"/>
 <pinref part="R21" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="NC"/>
+<wire x1="43.18" y1="157.48" x2="50.8" y2="157.48" width="0.1524" layer="91"/>
+<label x="43.18" y="157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="NC"/>
+<wire x1="93.98" y1="157.48" x2="101.6" y2="157.48" width="0.1524" layer="91"/>
+<label x="93.98" y="157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="NC"/>
+<wire x1="144.78" y1="157.48" x2="152.4" y2="157.48" width="0.1524" layer="91"/>
+<label x="144.78" y="157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="NC"/>
+<wire x1="198.12" y1="157.48" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
+<label x="198.12" y="157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="NC"/>
+<wire x1="144.78" y1="96.52" x2="152.4" y2="96.52" width="0.1524" layer="91"/>
+<label x="144.78" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="NC"/>
+<wire x1="93.98" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
+<label x="93.98" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="NC"/>
+<wire x1="43.18" y1="96.52" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
+<label x="43.18" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RAW" class="1">
