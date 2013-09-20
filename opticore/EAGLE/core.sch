@@ -7844,41 +7844,6 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <pinref part="GND36" gate="1" pin="GND"/>
 <pinref part="R21" gate="G$1" pin="1"/>
 </segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="NC"/>
-<wire x1="43.18" y1="157.48" x2="50.8" y2="157.48" width="0.1524" layer="91"/>
-<label x="43.18" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="NC"/>
-<wire x1="93.98" y1="157.48" x2="101.6" y2="157.48" width="0.1524" layer="91"/>
-<label x="93.98" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$7" gate="G$1" pin="NC"/>
-<wire x1="144.78" y1="157.48" x2="152.4" y2="157.48" width="0.1524" layer="91"/>
-<label x="144.78" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$9" gate="G$1" pin="NC"/>
-<wire x1="198.12" y1="157.48" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
-<label x="198.12" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$8" gate="G$1" pin="NC"/>
-<wire x1="144.78" y1="96.52" x2="152.4" y2="96.52" width="0.1524" layer="91"/>
-<label x="144.78" y="96.52" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$6" gate="G$1" pin="NC"/>
-<wire x1="93.98" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
-<label x="93.98" y="96.52" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$5" gate="G$1" pin="NC"/>
-<wire x1="43.18" y1="96.52" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
-<label x="43.18" y="96.52" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="RAW" class="1">
 <segment>
@@ -8604,6 +8569,55 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <wire x1="99.06" y1="15.24" x2="88.9" y2="15.24" width="0.1524" layer="91"/>
 <label x="88.9" y="15.24" size="1.778" layer="95"/>
 <pinref part="JP11" gate="G$1" pin="12"/>
+</segment>
+</net>
+<net name="NC1" class="1">
+<segment>
+<pinref part="U$2" gate="G$1" pin="NC"/>
+<wire x1="43.18" y1="157.48" x2="50.8" y2="157.48" width="0.1524" layer="91"/>
+<label x="43.18" y="157.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NC2" class="1">
+<segment>
+<pinref part="U$4" gate="G$1" pin="NC"/>
+<wire x1="93.98" y1="157.48" x2="101.6" y2="157.48" width="0.1524" layer="91"/>
+<label x="93.98" y="157.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NC3" class="1">
+<segment>
+<pinref part="U$7" gate="G$1" pin="NC"/>
+<wire x1="144.78" y1="157.48" x2="152.4" y2="157.48" width="0.1524" layer="91"/>
+<label x="144.78" y="157.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NC4" class="1">
+<segment>
+<pinref part="U$9" gate="G$1" pin="NC"/>
+<wire x1="198.12" y1="157.48" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
+<label x="198.12" y="157.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NC5" class="1">
+<segment>
+<pinref part="U$5" gate="G$1" pin="NC"/>
+<wire x1="43.18" y1="96.52" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
+<label x="43.18" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NC6" class="1">
+<segment>
+<pinref part="U$6" gate="G$1" pin="NC"/>
+<wire x1="93.98" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
+<label x="93.98" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="NC7" class="1">
+<segment>
+<pinref part="U$8" gate="G$1" pin="NC"/>
+<wire x1="144.78" y1="96.52" x2="152.4" y2="96.52" width="0.1524" layer="91"/>
+<label x="144.78" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

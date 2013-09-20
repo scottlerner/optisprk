@@ -135,10 +135,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="100.33" y1="0" x2="100.33" y2="80.01" width="0.2032" layer="20"/>
-<wire x1="100.33" y1="80.01" x2="0" y2="80.01" width="0.2032" layer="20"/>
-<wire x1="100.33" y1="0" x2="0" y2="0" width="0.2032" layer="20"/>
-<wire x1="0" y1="0" x2="0" y2="80.01" width="0.2032" layer="20"/>
+<wire x1="90.03" y1="0" x2="90.13" y2="77.01" width="0.2032" layer="20"/>
+<wire x1="90.13" y1="77.01" x2="0.1" y2="77.01" width="0.2032" layer="20"/>
+<wire x1="90.03" y1="0" x2="0" y2="0" width="0.2032" layer="20"/>
+<wire x1="0" y1="0" x2="0.1" y2="77.01" width="0.2032" layer="20"/>
 </plain>
 <libraries>
 <library name="SparkFun-Passives">
