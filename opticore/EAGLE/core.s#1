@@ -7580,6 +7580,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="LED6" library="SparkFun-LED" deviceset="LED" device="3MM"/>
 <part name="LED7" library="SparkFun-LED" deviceset="LED" device="3MM"/>
 <part name="LED8" library="SparkFun-LED" deviceset="LED" device="3MM"/>
+<part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7600,7 +7601,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="246.38" y1="58.42" x2="246.38" y2="116.84" width="0.1524" layer="97" style="dashdot"/>
 <text x="228.6" y="106.68" size="1.27" layer="91" align="bottom-right">CLEAR BOTH SIDES OF SJ1
 TO DISABLE I2C PULLUP RESISTORS</text>
-<text x="135.89" y="10.16" size="1.778" layer="97">User IO</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -7714,6 +7714,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <instance part="LED6" gate="G$1" x="60.96" y="93.98"/>
 <instance part="LED7" gate="G$1" x="111.76" y="93.98"/>
 <instance part="LED8" gate="G$1" x="76.2" y="17.78"/>
+<instance part="SUPPLY9" gate="G$1" x="91.44" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -7843,13 +7844,6 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <segment>
 <pinref part="GND36" gate="1" pin="GND"/>
 <pinref part="R21" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="RAW" class="1">
-<segment>
-<wire x1="99.06" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
-<label x="88.9" y="43.18" size="1.778" layer="95"/>
-<pinref part="JP11" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -8082,6 +8076,12 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <junction x="60.96" y="25.4"/>
 <pinref part="R24" gate="G$1" pin="1"/>
 <junction x="63.5" y="25.4"/>
+</segment>
+<segment>
+<pinref part="JP11" gate="G$1" pin="1"/>
+<pinref part="SUPPLY9" gate="G$1" pin="5V"/>
+<wire x1="99.06" y1="43.18" x2="91.44" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="43.18" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MAIN" class="0">
