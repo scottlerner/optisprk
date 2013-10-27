@@ -208,12 +208,33 @@ Standard 8.5x11 US Letter frame</description>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="+24V">
+<wire x1="1.27" y1="-0.635" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+24V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+3V3" prefix="+3V3">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+3V3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+24V" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+24V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -7812,6 +7833,8 @@ Standard adjustable voltage regulator but in SMD form. Spark Fun Electronics SKU
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="P+1" library="supply1" deviceset="+24V" device=""/>
+<part name="P+2" library="supply1" deviceset="+24V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7955,6 +7978,8 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <instance part="GND4" gate="1" x="121.92" y="10.16"/>
 <instance part="SUPPLY10" gate="G$1" x="121.92" y="33.02"/>
 <instance part="SUPPLY11" gate="G$1" x="134.62" y="33.02"/>
+<instance part="P+1" gate="1" x="38.1" y="48.26"/>
+<instance part="P+2" gate="1" x="215.9" y="167.64"/>
 </instances>
 <busses>
 </busses>
@@ -8384,7 +8409,7 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <segment>
 <pinref part="X1" gate="-8" pin="2"/>
 <label x="223.52" y="124.46" size="1.778" layer="95"/>
-<wire x1="231.14" y1="124.46" x2="218.44" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="124.46" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -8630,20 +8655,6 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <pinref part="R20" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$37" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="PWR"/>
-<wire x1="27.94" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="JP10" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="43.18" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
-<junction x="38.1" y="27.94"/>
-<pinref part="C17" gate="G$1" pin="+"/>
-<wire x1="38.1" y1="20.32" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VIN"/>
-<wire x1="45.72" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$39" class="0">
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
@@ -8871,6 +8882,23 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <pinref part="X1" gate="-7" pin="2"/>
 <wire x1="231.14" y1="129.54" x2="220.98" y2="129.54" width="0.1524" layer="91"/>
 <label x="223.52" y="129.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="+24V" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="PWR"/>
+<wire x1="27.94" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="JP10" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="43.18" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
+<junction x="38.1" y="27.94"/>
+<pinref part="C17" gate="G$1" pin="+"/>
+<wire x1="38.1" y1="20.32" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VIN"/>
+<wire x1="45.72" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="P+1" gate="1" pin="+24V"/>
+<wire x1="38.1" y1="45.72" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
+<junction x="38.1" y="43.18"/>
 </segment>
 </net>
 </nets>

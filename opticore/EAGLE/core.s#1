@@ -208,33 +208,12 @@ Standard 8.5x11 US Letter frame</description>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="+24V">
-<wire x1="1.27" y1="-0.635" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+24V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+3V3" prefix="+3V3">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+3V3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+24V" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="+24V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -7821,9 +7800,6 @@ Standard adjustable voltage regulator but in SMD form. Spark Fun Electronics SKU
 <part name="LED7" library="SparkFun-LED" deviceset="LED" device="3MM"/>
 <part name="LED8" library="SparkFun-LED" deviceset="LED" device="3MM"/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="J2" library="SparkFun-Connectors" deviceset="POWER_JACK" device="SLT"/>
-<part name="P+1" library="supply1" deviceset="+24V" device=""/>
-<part name="P+2" library="supply1" deviceset="+24V" device=""/>
 <part name="IC1" library="national-semiconductor" deviceset="LM2596" device="T"/>
 <part name="U$1" library="adafruit" deviceset="L" device="" value="150uH"/>
 <part name="D8" library="diode" deviceset="1N4004" device=""/>
@@ -7967,9 +7943,6 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <instance part="LED7" gate="G$1" x="111.76" y="93.98"/>
 <instance part="LED8" gate="G$1" x="134.62" y="20.32"/>
 <instance part="SUPPLY9" gate="G$1" x="205.74" y="71.12"/>
-<instance part="J2" gate="G$1" x="208.28" y="121.92"/>
-<instance part="P+1" gate="1" x="218.44" y="152.4"/>
-<instance part="P+2" gate="1" x="220.98" y="167.64" rot="MR0"/>
 <instance part="IC1" gate="G$1" x="58.42" y="22.86"/>
 <instance part="U$1" gate="G$1" x="86.36" y="25.4" rot="R90"/>
 <instance part="D8" gate="1" x="73.66" y="15.24" rot="R90"/>
@@ -8412,12 +8385,6 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <pinref part="X1" gate="-8" pin="2"/>
 <label x="223.52" y="124.46" size="1.778" layer="95"/>
 <wire x1="231.14" y1="124.46" x2="218.44" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="GNDBREAK"/>
-<wire x1="218.44" y1="124.46" x2="218.44" y2="127" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="127" x2="210.82" y2="127" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="GND"/>
-<wire x1="210.82" y1="124.46" x2="218.44" y2="124.46" width="0.1524" layer="91"/>
-<junction x="218.44" y="124.46"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -8828,51 +8795,6 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <label x="144.78" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+24V" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="PWR"/>
-<pinref part="P+1" gate="1" pin="+24V"/>
-<wire x1="210.82" y1="129.54" x2="218.44" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="129.54" x2="218.44" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X1" gate="-1" pin="2"/>
-<wire x1="231.14" y1="160.02" x2="220.98" y2="160.02" width="0.1524" layer="91"/>
-<label x="223.52" y="160.02" size="1.778" layer="95"/>
-<pinref part="P+2" gate="1" pin="+24V"/>
-<wire x1="220.98" y1="165.1" x2="220.98" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-2" pin="2"/>
-<wire x1="231.14" y1="154.94" x2="220.98" y2="154.94" width="0.1524" layer="91"/>
-<label x="223.52" y="154.94" size="1.778" layer="95"/>
-<wire x1="220.98" y1="160.02" x2="220.98" y2="154.94" width="0.1524" layer="91"/>
-<junction x="220.98" y="160.02"/>
-<pinref part="X1" gate="-3" pin="2"/>
-<wire x1="231.14" y1="149.86" x2="220.98" y2="149.86" width="0.1524" layer="91"/>
-<label x="223.52" y="149.86" size="1.778" layer="95"/>
-<wire x1="220.98" y1="154.94" x2="220.98" y2="149.86" width="0.1524" layer="91"/>
-<junction x="220.98" y="154.94"/>
-<pinref part="X1" gate="-4" pin="2"/>
-<wire x1="231.14" y1="144.78" x2="220.98" y2="144.78" width="0.1524" layer="91"/>
-<label x="223.52" y="144.78" size="1.778" layer="95"/>
-<wire x1="220.98" y1="149.86" x2="220.98" y2="144.78" width="0.1524" layer="91"/>
-<junction x="220.98" y="149.86"/>
-<pinref part="X1" gate="-5" pin="2"/>
-<wire x1="231.14" y1="139.7" x2="220.98" y2="139.7" width="0.1524" layer="91"/>
-<label x="223.52" y="139.7" size="1.778" layer="95"/>
-<wire x1="220.98" y1="144.78" x2="220.98" y2="139.7" width="0.1524" layer="91"/>
-<junction x="220.98" y="144.78"/>
-<pinref part="X1" gate="-6" pin="2"/>
-<wire x1="231.14" y1="134.62" x2="220.98" y2="134.62" width="0.1524" layer="91"/>
-<label x="223.52" y="134.62" size="1.778" layer="95"/>
-<wire x1="220.98" y1="139.7" x2="220.98" y2="134.62" width="0.1524" layer="91"/>
-<junction x="220.98" y="139.7"/>
-<pinref part="X1" gate="-7" pin="2"/>
-<wire x1="231.14" y1="129.54" x2="220.98" y2="129.54" width="0.1524" layer="91"/>
-<label x="223.52" y="129.54" size="1.778" layer="95"/>
-<wire x1="220.98" y1="134.62" x2="220.98" y2="129.54" width="0.1524" layer="91"/>
-<junction x="220.98" y="134.62"/>
-</segment>
-</net>
 <net name="NO4" class="0">
 <segment>
 <pinref part="U$9" gate="G$1" pin="NO"/>
@@ -8900,6 +8822,55 @@ TO DISABLE I2C PULLUP RESISTORS</text>
 <wire x1="121.92" y1="22.86" x2="121.92" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="22.86" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
 <junction x="121.92" y="22.86"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="X1" gate="-6" pin="2"/>
+<wire x1="231.14" y1="134.62" x2="220.98" y2="134.62" width="0.1524" layer="91"/>
+<label x="223.52" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="X1" gate="-1" pin="2"/>
+<wire x1="231.14" y1="160.02" x2="220.98" y2="160.02" width="0.1524" layer="91"/>
+<label x="223.52" y="160.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="X1" gate="-2" pin="2"/>
+<wire x1="231.14" y1="154.94" x2="220.98" y2="154.94" width="0.1524" layer="91"/>
+<label x="223.52" y="154.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="X1" gate="-3" pin="2"/>
+<wire x1="231.14" y1="149.86" x2="220.98" y2="149.86" width="0.1524" layer="91"/>
+<label x="223.52" y="149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="X1" gate="-4" pin="2"/>
+<wire x1="231.14" y1="144.78" x2="220.98" y2="144.78" width="0.1524" layer="91"/>
+<label x="223.52" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="X1" gate="-5" pin="2"/>
+<wire x1="231.14" y1="139.7" x2="220.98" y2="139.7" width="0.1524" layer="91"/>
+<label x="223.52" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="X1" gate="-7" pin="2"/>
+<wire x1="231.14" y1="129.54" x2="220.98" y2="129.54" width="0.1524" layer="91"/>
+<label x="223.52" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
