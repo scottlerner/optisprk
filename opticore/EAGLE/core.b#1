@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.2" unitdist="mil" unit="mil" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="$GND" color="13" fill="1" visible="no" active="no"/>
@@ -140,14 +140,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="3" y1="52" x2="77" y2="52" width="0.2032" layer="20"/>
-<wire x1="77" y1="52" x2="80" y2="49" width="0.2032" layer="20" curve="-90"/>
-<wire x1="80" y1="49" x2="80" y2="3" width="0.2032" layer="20"/>
+<wire x1="0" y1="3" x2="0" y2="46.9872" width="0.2032" layer="20"/>
+<wire x1="0" y1="46.9872" x2="3" y2="49.9872" width="0.2032" layer="20" curve="-90"/>
+<wire x1="3" y1="49.9872" x2="77" y2="49.9872" width="0.2032" layer="20"/>
+<wire x1="77" y1="49.9872" x2="80" y2="46.9872" width="0.2032" layer="20" curve="-90"/>
+<wire x1="80" y1="46.9872" x2="80" y2="3" width="0.2032" layer="20"/>
 <wire x1="80" y1="3" x2="77" y2="0" width="0.2032" layer="20" curve="-90"/>
 <wire x1="77" y1="0" x2="3" y2="0" width="0.2032" layer="20"/>
 <wire x1="3" y1="0" x2="0" y2="3" width="0.2032" layer="20" curve="-90"/>
-<wire x1="0" y1="3" x2="0" y2="49" width="0.2032" layer="20"/>
-<wire x1="0" y1="49" x2="3" y2="52" width="0.2032" layer="20" curve="-90"/>
 <text x="42.7" y="43" size="0.8128" layer="21" font="vector">Copyright Opti-Lawn 2013</text>
 <rectangle x1="47.17541875" y1="32.2554625" x2="47.1805" y2="32.2605375" layer="21"/>
 <rectangle x1="47.1703375" y1="32.260540625" x2="47.185575" y2="32.265621875" layer="21"/>
@@ -5167,13 +5167,12 @@
 <rectangle x1="47.6885" y1="40.424103125" x2="47.7545375" y2="40.429178125" layer="21"/>
 <rectangle x1="47.693578125" y1="40.42918125" x2="47.749459375" y2="40.4342625" layer="21"/>
 <rectangle x1="47.7139" y1="40.4342625" x2="47.7393" y2="40.4393375" layer="21"/>
-<text x="0" y="-0.0254" size="0.010159375" layer="21" font="vector" ratio="15">/Users/scottlerner/Desktop/optilawn_logo.bmp</text>
 <wire x1="73.20788125" y1="44.465240625" x2="73.20788125" y2="44.455078125" width="0.254" layer="21"/>
 <wire x1="73.20788125" y1="44.455078125" x2="76.596240625" y2="41.06671875" width="0.254" layer="21"/>
 <wire x1="76.596240625" y1="41.06671875" x2="76.596240625" y2="32.9692" width="0.254" layer="21"/>
 <wire x1="76.596240625" y1="32.9692" x2="73.218040625" y2="29.591" width="0.254" layer="21"/>
-<text x="33.55848125" y="48.503840625" size="1.4224" layer="21" font="vector" ratio="15">Opti-Lawn Gardener v1.0</text>
-<text x="5.08508125" y="45.024040625" size="1.4224" layer="21" font="vector" ratio="15">IC1</text>
+<text x="12.59848125" y="45.173840625" size="1.4224" layer="21" font="vector" ratio="15">Opti-Lawn Gardener v1.0</text>
+<text x="5.171440625" y="47.360840625" size="1.4224" layer="21" font="vector" ratio="15">IC1</text>
 <text x="1.894840625" y="29.4132" size="1.4224" layer="21" ratio="15">C1</text>
 <text x="13.208" y="31.810959375" size="1.4224" layer="21" ratio="15">D3</text>
 <text x="10.96771875" y="27.4828" size="1.4224" layer="21" ratio="15">R1</text>
@@ -6278,7 +6277,6 @@ design rules under a new name.</description>
 <element name="T8" library="SparkFun-DiscreteSemi" package="TO-92" value="TRIACPTH" x="62" y="16" rot="R270"/>
 <element name="H1" library="holes" package="3,0-PAD" value="MOUNT-PAD-ROUND3.0" x="15.6" y="23.6"/>
 <element name="H2" library="holes" package="3,0-PAD" value="MOUNT-PAD-ROUND3.0" x="69" y="6"/>
-<element name="H3" library="holes" package="3,0-PAD" value="MOUNT-PAD-ROUND3.0" x="26.2" y="46"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -6367,6 +6365,12 @@ design rules under a new name.</description>
 <wire x1="56.53" y1="17.8" x2="61.47" y2="17.8" width="0.4064" layer="16"/>
 <wire x1="61.47" y1="17.8" x2="62" y2="17.27" width="0.4064" layer="16"/>
 <wire x1="70.07" y1="21.58" x2="70.07" y2="20.465" width="0.254" layer="1"/>
+<polygon width="0.254" layer="16" isolate="0.4064">
+<vertex x="0" y="0"/>
+<vertex x="0" y="49.9872"/>
+<vertex x="79.9846" y="49.9872"/>
+<vertex x="80" y="0"/>
+</polygon>
 </signal>
 <signal name="+3V3">
 <contactref element="C4" pad="1"/>
@@ -6624,9 +6628,9 @@ design rules under a new name.</description>
 <wire x1="6.54" y1="25" x2="6.54" y2="28.26" width="0.4064" layer="1"/>
 <wire x1="6.54" y1="28.26" x2="3.7" y2="31.1" width="0.4064" layer="1"/>
 <wire x1="3.7" y1="31.1" x2="3.7" y2="33.97" width="0.4064" layer="1"/>
-<wire x1="3.7" y1="33.97" x2="3.73" y2="34" width="0" layer="19" extent="1-16"/>
 <wire x1="3.73" y1="34" x2="3.73" y2="38.1864" width="0.4064" layer="1"/>
 <wire x1="3.73" y1="38.1864" x2="2.9964" y2="38.92" width="0.4064" layer="1"/>
+<wire x1="3.7" y1="33.97" x2="3.73" y2="34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="RN1" pad="2"/>
